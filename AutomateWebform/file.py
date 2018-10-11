@@ -1,6 +1,6 @@
 import os
 
-from selenium import webdriver
+
 
 submission_dir = 'completed_assignments'
 dir_list = os.listdir(submission_dir)
@@ -11,10 +11,3 @@ for directory in dir_list:
         print(file_list[0])
         file_tup[directory] = file_list[0]
 
-# Using Chrome to access web
-driver = webdriver.Chrome()
-# Open the website
-driver.get('https://canvas.case.edu')
-print(file_tup)
-# seq = ['a','b','c']
-# 'abc'.join()
